@@ -33,3 +33,9 @@ describe('romanNumeralD', function() {
     expect(romanNumeralD(500)).to.eql(["D"])
   });
 });
+
+describe('romanNumeralM', function() {
+  it("takes roman numeral M and adds it to numbers 1000-3999", function() {
+    expect(romanNumeralM(1000)).to.eql(["M"])
+  });
+});

@@ -51,3 +51,12 @@ var romanNumeralD = function(number) {
   }
   return output;
 };
+
+var romanNumeralM = function(number) {
+  var output = [];
+  while(number >= 1000) {
+    output.push("M");
+    number -= 1000;
+  }
+  return output;
+};
