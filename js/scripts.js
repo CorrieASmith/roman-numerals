@@ -42,3 +42,12 @@ var romanNumeralC = function(number) {
   }
   return output;
 };
+
+var romanNumeralD = function(number) {
+  var output = [];
+  while(number >= 500) {
+    output.push("D");
+    number -= 500;
+  }
+  return output;
+};
