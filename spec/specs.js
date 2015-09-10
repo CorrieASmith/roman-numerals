@@ -21,3 +21,9 @@ describe('romanNumeralL', function() {
     expect(romanNumeralL(50)).to.eql(["L"])
   });
 });
+
+describe('romanNumeralC', function() {
+  it("takes roman numeral C and adds it to numbers 100-499", function() {
+    expect(romanNumeralC(100)).to.eql(["C"])
+  });
+});

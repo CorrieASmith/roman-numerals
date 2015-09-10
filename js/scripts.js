@@ -33,3 +33,12 @@ var romanNumeralL = function(number) {
   }
   return output;
 };
+
+var romanNumeralC = function(number) {
+  var output = [];
+  while(number >= 100) {
+    output.push("C");
+    number -= 100;
+  }
+  return output;
+};
