@@ -15,3 +15,12 @@ var romanNumeralV = function(number) {
   }
   return output;
 };
+
+var romanNumeralX = function(number) {
+  var output = [];
+  while(number >= 10) {
+    output.push("X");
+    number -= 10;
+  }
+  return output;
+};
