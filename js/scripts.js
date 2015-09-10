@@ -6,3 +6,12 @@ var romanNumeralI = function(number) {
   }
   return output;
 };
+
+var romanNumeralV = function(number) {
+  var output = [];
+  while(number >= 5) {
+    output.push("V");
+    number -= 5;
+  }
+  return output;
+};
