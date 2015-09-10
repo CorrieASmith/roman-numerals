@@ -9,8 +9,15 @@ describe('romanNumeralV', function() {
     expect(romanNumeralV(5)).to.eql(["V"])
   });
 });
+
 describe('romanNumeralX', function() {
   it("takes roman numeral X and adds it to numbers 10-19", function() {
     expect(romanNumeralX(10)).to.eql(["X"])
+  });
+});
+
+describe('romanNumeralL', function() {
+  it("takes roman numeral L and adds it to numbers 50-99", function() {
+    expect(romanNumeralL(50)).to.eql(["L"])
   });
 });

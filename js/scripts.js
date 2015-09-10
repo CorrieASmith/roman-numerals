@@ -24,3 +24,12 @@ var romanNumeralX = function(number) {
   }
   return output;
 };
+
+var romanNumeralL = function(number) {
+  var output = [];
+  while(number >= 50) {
+    output.push("L");
+    number -= 50;
+  }
+  return output;
+};
