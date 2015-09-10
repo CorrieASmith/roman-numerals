@@ -35,8 +35,18 @@ var romanNumeral = function(number) {
     output.push("I");
     number -= 1;
   }
-  
-  return output.join("");
+  output = output.join("");
+
+  output = output.replace("DCCCC", "CM");
+  output = output.replace("CCCC", "CD");
+  output = output.replace("LXXXX", "XC");
+  output = output.replace("XXXX", "XL");
+  output = output.replace("VIIII","IX");
+  output = output.replace("IIII","IV");
+
+
+  return output;
+
 };
 
 
